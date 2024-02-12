@@ -1,0 +1,221 @@
+body {
+    background-color: #EDE8E7;
+    margin: 0;
+    font-family: arial;
+}
+
+body > header {
+    height: 80px;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: right;
+}
+
+nav ul li {
+    padding: 0 20px;
+    text-decoration: none;
+    float: right;
+}
+
+nav ul a {
+    color: #343232;
+    text-decoration: none;
+    font-family: helvetica;
+    font-weight: bold;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    display: flex;
+}
+
+.zmenak {
+    color: #6b8de3;
+    font-weight: bold;
+    border-bottom: 2px solid #6b8de3;
+}
+
+nav ul a:hover,
+.zmena a {
+    color: #6b8de3;
+    font-weight: bold;
+    border-bottom: 2px solid #6b8de3;
+}
+
+.velky {
+    font-size: 32px;
+    text-align: center;
+}
+
+.center {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+
+.stred {
+    display: flex;
+    justify-content: center;
+}
+
+.sloupce {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gridik {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+label {
+    margin-bottom: 5px;
+    justify-items: center;
+}
+
+textarea {
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.sloupec1 {
+    text-align: left;
+    margin-right: 5px;
+}
+
+.sloupec2 {
+    text-align: left;
+    margin-left: 5px;
+}
+
+form {
+    margin-right: 5px;
+}
+
+.kontakt {
+    justify-content: center;
+}
+iframe {
+    width: 100%;
+}
+
+.gridik {
+    grid-template-columns: repeat(2 ,1fr)
+}
+
+.flexik {
+   display: flex;
+}
+
+.flexik article {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nadpisy {
+    justify-content: right;
+}
+
+.flex {
+    display: flex;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-bottom: 35px;
+}
+
+.flexik div {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.flexos {
+    display: flex;
+    flex-direction: column;
+}
+
+aside img {
+    height: 500px;
+}
+
+footer {
+    background: #383937;
+    box-sizing: border-box;
+    text-align: center;
+    height: 75px;
+    width: 100%;
+    padding: 20px 0 0 0;
+    font-family: Arial;
+    color: #D8DDD4;
+}
+
+@media screen and (max-width: 1200px) {
+    aside img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body > header {
+        background: #383937;
+        height: 200px;
+    }
+    
+    nav ul {
+        display: grid;
+        text-align: center;
+    }
+    
+    nav ul a {
+    color: whitesmoke;
+    }
+    
+    .logo {
+        display: none;
+    }
+    
+    .gridik {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    }
+    
+    .flexik {
+    display: block;
+    text-align: center;     
+    }
+    
+    .sloupec1 {
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    .sloupec2 {
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    .flex {
+        display: block;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
